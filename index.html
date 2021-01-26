@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Τζόκερ</title>
+  <script>
+  function klirosi(){
+var n;
+var p=new Array();
+for (var i=1;i<=5;i++) {
+  do{
+n=Math.floor(Math.random()*45)+1;
+  }while (p.indexOf(n)!=-1);
+  p.push(n);
+}
+var d1=document.querySelector("#pentada");
+d1.innerHTML=p;
+}
+  function klirosi2(){
+var n;
+var p=new Array();
+for (var i=1;i<=1;i++) {
+  do{
+n=Math.floor(Math.random()*20)+1;
+  }while (p.indexOf(n)!=-1);
+  p.push(n);
+}
+var d1=document.querySelector("#tzoker");
+d1.innerHTML=p;
+}
+
+  </script>
+  <style>
+  div{
+  width:40%;
+  height:300px;
+  border:1px solid black;
+  margin:10px;
+  padding:5px;
+}
+  </style>
+</head>
+<body>
+<img src="tzoker.jpg" width="300"
+</br></br>
+
+ <button onclick="klirosi()">Τυχερή πεντάδα</button>
+  </br></br>
+
+<div id="pentada"></div>
+
+<button onclick="klirosi2()">Τζόκερ</button>
+  </br></br>
+
+<div id="tzoker"> </div>
+
+
+</div>
+</body>
+</html>
